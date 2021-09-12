@@ -1,0 +1,47 @@
+<script>
+
+    checkFavourites();
+</script>
+<link rel="stylesheet" href="css/menuCommon.css">
+<style>
+    .option .caltext{
+        cursor: pointer!important;
+    }
+</style>
+
+<div class="back" onclick="openOption('appdata/menu.html','Menu')"><img src="icons/back.png" alt=""></div>      
+
+<div class="menu">    
+    <div class="row">
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <span class="caltext" onclick="loadcalculator('calculators/cramerKurali.html','Cramer Kuralı')">Cramer Kuralı</span>
+            </div>
+        </div>        
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <span class="caltext" onclick="loadcalculator('calculators/matrix.html','Matris')">Matris</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <span class="caltext" onclick="loadcalculator('calculators/birinciDereceDenklem.html','Birinci Dereceden Denklem')">Birinci Dereceden Denklem</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <span class="caltext" onclick="loadcalculator('calculators/ortalamalar.html','AO/GO/HO Ortalamalar')">AO/GO/HO Ortalamalar</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <span class="caltext" onclick="loadcalculator('calculators/kesirCozme.html','Kesir Çözme')">Kesir Çözme</span>
+            </div>
+        </div>
+    </div>
+</div>
