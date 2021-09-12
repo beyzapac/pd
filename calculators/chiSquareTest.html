@@ -1,0 +1,35 @@
+<div class="back" onclick="openOption('appdata/menudata/istatistik.html','Statistics')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="chitest">
+    <h1 style="text-align: center; margin: 2rem auto 2rem auto;">Chi-Square Test</h1>
+    <p style="margin: 0 auto 4rem auto; font-style: italic;">(Tek Satır Veri ile)</p>
+    <p style="margin: 0 auto 6rem auto; font-style: italic;">Chi-Square (χ2) istatistiği, bir modelin gerçek gözlemlenen verilerle nasıl karşılaştırıldığını ölçen bir testtir. Chi-Square istatistiğinin hesaplanmasında kullanılan veriler rastgele, ham, birbirini dışlayan, bağımsız değişkenlerden alınmış ve yeterince büyük bir örneklemden alınmış olmalıdır.</p>
+    <form action="">
+        <input class="form__field" type="text" id="obsList"
+            placeholder="SPACE ile Ayrılmış Gözlenen Listeyi Girin">
+        <br><br>
+        <input class="form__field" type="number" id="sigValue"
+            placeholder="Verilen Örneklem değerini girin (χ2)">
+        <br><br>
+
+        <button class="btn btn-light" type="button" onclick="chivalue()">Test</button>
+        <button class="btn btn-light" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <p id="chians"></p>
+    <br>
+    <p id="chitestans"></p>
+    <br>
+    <p id="concluChi"></p>
+</div>

@@ -1,0 +1,28 @@
+
+  <div class="back" onclick="openOption('appdata/menudata/genelMatematik.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+  <div  id="perchng">
+    <h2 style="text-align:center;">Yüzdelik Değişim Hesabı</h2>
+    <br>
+    <form action="">
+        <input type="text" id="initialVal" placeholder="İlk Yüzdelik değer" class="form__field"><br>
+        <input type="text" id="finalVal" placeholder="Son Yüzdelik Değer" class="form__field"><br>
+        <button type="button" class="btn btn-dark" onclick="perchngCal()">Hesapla</button>
+
+        <button type="button" class="btn btn-dark" onclick="this.form.reset();">Reset</button>
+        <br><br>
+    </form>
+
+    <p id="perchngans" style="font-family:mathfont"></p><br>
+</div>

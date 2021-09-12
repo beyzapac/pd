@@ -1,0 +1,165 @@
+<div class="back" onclick="openOption('appdata/menudata/trigonometri.html','Trigonometry')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="height1">
+    <div class="text-center">
+        <h2><label>Yükseklik ve Uzunluk</label></h2><br><br>
+    </div>
+    <h4 class="d-flex justify-content-center">Yükseklik Açısı ve Uzunluk verildiğinde Yüksekliği hesaplamak için</h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height22" placeholder="Uzunluk (BC)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height33" placeholder="Yükseklik Açısı(∠BCA)"
+            style="border: none; background: transparent;width: 20rem; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-light" onclick=heightdist1()>
+                    Hesapla
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight1" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br><br>
+    <h4 class="d-flex justify-content-center">Düşey Açı ve Uzunluk verildiğinde Yüksekliği hesaplamak için
+        </h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height92" placeholder="Uzunluk Girin (BC)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height93" placeholder="Düşey açı değerini girin(∠BCA)"
+            style="border: none; background: transparent;width: 20rem; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick=heightdist9()>
+                    Hesapla
+                </button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight9" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br><br>
+    <h4 class="d-flex justify-content-center">Yükseklik Açısı ve Yükseklik olduğunda Uzunluğu hesaplamak için
+        </h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height51" placeholder="Yükseklik (AB)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height52" placeholder="Yükseklik açısı(∠BCA)"
+            style="border: none; background: transparent;width: 20rem; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick=heightdist5()>
+                    Hesapla
+                </button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight5" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br><br>
+    <h4 class="d-flex justify-content-center">Düşey Açısı ve Yükseklik verildiğinde Uzunluğu hesaplamak için</h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height81" placeholder="Yükseklik (AB)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height82" placeholder="Düşey Açı(∠BCA)"
+            style="border: none; background: transparent;width: 20rem; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick=heightdist8()>
+                    Hesapla
+                </button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight8" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br><br>
+    <h4 class="d-flex justify-content-center">Yükseklik Açısını hesaplamak için </h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height21" placeholder="Uzunluk (BC)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height31" placeholder="Yükseklik (AB)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick=heightdist2()>
+                    Hesapla
+                </button>
+            </div>
+
+            <div class="col-4">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight2" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br><br>
+    <h4 class="d-flex justify-content-center">Düşey Açı Hesaplamak için </h4><br>
+    <form class="form-inline d-flex flex-column align-items-center" id="myForm">
+        <input type="number" id="height511" placeholder="Uzunluk (BC)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <input type="number" id="height41" placeholder="Yükseklik (AB)"
+            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; "><br>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-light" onclick=heightdist3()>
+                    Hesapla
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="coll1" style="text-align: center;">
+        <h5 id="printheight3" style="color: white; font-size: x-large;"></h5>
+    </div>
+    <br>
+</div>

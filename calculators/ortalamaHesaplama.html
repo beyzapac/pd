@@ -1,0 +1,37 @@
+<div class="back" onclick="openOption('appdata/menudata/istatistik.html','Statistics')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="wmcs">
+
+
+    <h1 style="font-family:mathfont; text-align:center;">Ağırlıklı Ortalama Hesaplama </h1>
+    <form action="">
+        <input type="text" name="wmcx" class="form__field" id="wmcx" width="5em"
+            placeholder="X değerlerini BOŞLUK bırakarak giriniz">
+        <p>&nbsp;</p>
+        <input type="text" name="wmcw" class="form__field" id="wmcw"
+            placeholder="Aynı şekilde Ağırlık değerlerini girin">
+        <p>&nbsp;</p>
+        <button type="button" class="btn btn-outline-light mr-2" onclick="wmccal()">Hesapla</button>
+        <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <p id="wmcans" style="color: white; text-align: center; font-size: 1.7em; font-family:mathfont"></p>
+    <p>&nbsp;</p>
+
+    <div class="d-flex justify-content-center">
+        <img src="images\wmean.jpg" class="img-fluid" style="width: 100%; max-width: 450px;">
+    </div>
+
+
+</div>

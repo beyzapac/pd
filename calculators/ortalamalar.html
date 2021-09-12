@@ -1,0 +1,125 @@
+<div class="back" onclick="openOption('appdata/menudata/lineerCebir.html','Menu')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div class="text-center">
+    <h2><label>Ortalama Hesaplama</label></h2>
+</div>
+<br><br>
+<div class="container">
+    <div class="col-9">
+        <h4 class="d-flex justify-content">Aritmetik Ortalama</h4><br>
+        <form class="form-inline d-flex flex-column align-items" id="myForm">
+            <input type="number" id="aval" class="form__field" placeholder="İlk terimi girin (a)" style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <input type="number" id="cval" class="form__field" placeholder="Son terimi girin(c) " style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick=amsol()>
+                            Çözüm
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="coll1" style="text-align: center;">
+            <p id="am_formula" style="font-family:mathfont;;width:auto;" class="stopwrap"></p>
+            <h5 id="am"></h5>
+        </div>
+    </div>
+    <br><br>
+    <div class="col-9">
+        <h4 class="d-flex justify-content">Geometrik Ortalama</h4><br>
+        <form class="form-inline d-flex flex-column align-items" id="myForm">
+            <input type="number" id="aval1" class="form__field" placeholder="İlk terimi girin (a)" style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <input type="number" id="cval1" class="form__field" placeholder="Son terimi girin(c) " style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <div class="container">   
+                <div class="row">
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick=gmsol()>
+                            Çözüm
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="coll1" style="text-align: center;">
+            <p id="gm_formula" style="font-family:mathfont;;width:auto;" class="stopwrap"></p>
+            <h5 id="gm"></h5>
+        </div>
+    </div>
+    <br><br>
+    <div class="col-9">
+        <h4 class="d-flex justify-content">Harmonik Ortalama</h4><br>
+        <form class="form-inline d-flex flex-column align-items" id="myForm">
+            <input type="number" id="aval2" class="form__field" placeholder="İlk terimi girin (a)" style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <input type="number" id="cval2" class="form__field" placeholder="Son terimi girin(c) " style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <div class="container">   
+                <div class="row">
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick=hmsol()>
+                            Çözüm
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="coll1" style="text-align: center;">
+            <p id="hm_formula" style="font-family:mathfont;;width:auto;" class="stopwrap"></p>
+            <h5 id="hm"></h5>
+        </div>
+    </div>
+    <br><br>
+    <div class="col-9">
+        <h4 class="d-flex justify-content">AM ve GM verildiğinde Harmonik Ortalama Hesaplama</h4><br>
+        <form class="form-inline d-flex flex-column align-items" id="myForm">
+            <input type="number" id="am11" class="form__field" placeholder="Aritmetik Ortalamayı Giriniz (AM)" style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <input type="number" id="gm11" class="form__field" placeholder="Geometrik ORtalamayı Giriniz (GM) " style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color:  white;"><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick=hmgm()>
+                            Çözüm
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="coll1" style="text-align: center;">
+            <p id="hmgmans" style="font-family:mathfont;;width:auto;" class="stopwrap"></p>
+        </div>
+    </div>
+</div>

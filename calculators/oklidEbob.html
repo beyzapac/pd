@@ -1,0 +1,30 @@
+<div class="back" onclick="openOption('appdata/menudata/genelMatematik.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="gcd">
+    <h2 style="text-align:center;">Öklid EBOB</h2>
+
+    <form action="">
+        <input type="text" id="gcdin1" placeholder="1. sayı" class="form__field">
+        <input type="text" id="gcdin2" placeholder="2. sayı" class="form__field">
+        <br>
+        <button type="button" class="btn btn-dark" onclick="gcdfind()">Hesapla</button>
+
+        <button class="btn btn-dark" onclick="this.form.reset();">Reset</button>
+        <br>
+    </form>
+
+    <h4 id="gcdans"></h4>
+    <br>
+
+</div>

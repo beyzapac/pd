@@ -1,0 +1,35 @@
+<div class="back" onclick="openOption('appdata/menudata/genelMatematik.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+    <h1 style="text-align: center;">Kare Kök Hesaplama </h1><br>
+    <form action="">
+        <div class="form-group">
+            <input type="text" id="squarerootin" class="form__field" placeholder="Değeri girin ">
+        </div><br>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-light" onclick="findSqrt()">
+                Hesapla
+            </button>
+            <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                Reset
+            </button>
+            <br>
+
+        </div>
+        <br>
+    </form>
+
+    <div class="form-group">
+        <p id="squarerootresult" style="overflow-y:hidden;height:100%;text-align: center;"></p>
+    </div>

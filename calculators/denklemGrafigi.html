@@ -1,0 +1,37 @@
+<div class="back" onclick="openOption('appdata/menudata/grafik-sekil.html','Graph and Spaces')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="plotgraph">
+    <form action="">
+        <div class="form-group">
+            <input type="text" id="inputplotequation" class="form__field" placeholder="Denklemi girin (Örn:x=5x^2 - 4x - 8)"
+                oninput="dploteq();document.getElementById('plotequationresult').innerHTML=''">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-light" type="button"
+                onclick="plotit('inputplotequation','plotequationresult',nerdamer(document.getElementById('inputplotequation').value).evaluate().toString());">
+                Plot
+            </button>
+            <button class="btn btn-light" type="button"
+                onclick="this.form.reset();dploteq();document.getElementById('plotequationresult').innerHTML=''">
+                Reset
+            </button>
+        </div>
+    </form>
+    <div class="form-group">
+        <p id="plotgrapheqdisplay"></p>
+    </div>
+    <div class="form-group">
+        <p id="plotequationresult"></p>
+    </div>
+</div>

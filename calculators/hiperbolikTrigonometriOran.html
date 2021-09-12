@@ -1,0 +1,32 @@
+<div class="back" onclick="openOption('appdata/menudata/trigonometri.html','Trigonometry')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<h1 style="text-align: center;">Hiperbolik Trigonometri Oranları </h1><br>
+    <form action="">
+        <div class="form-group text-center">
+            <input type="text" id="hypertrignoin" class="form__field" placeholder="Değer girin "
+                style="width:100%; max-width:500px;">
+        </div><br>
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-light" onclick="hypertrigno()"> Hesapla </button>
+
+            <button type="button" class="btn btn-light m-1" onclick="this.form.reset();"> Reset
+            </button><br>
+        </div>
+    </form>
+    <div class="form-group">
+        <p id="hyperresult" style="overflow-y:hidden;height:100%;text-align:center"></p><br>
+        <p id="hypersinh" style="overflow-y:hidden;height:100%;text-align: center;"></p><br>
+        <p id="hypercosh" style="overflow-y:hidden;height:100%;text-align: center;"></p><br>
+        <p id="hypertanh" style="overflow-y:hidden;height:100%;text-align: center;"></p><br>
+    </div>

@@ -1,0 +1,23 @@
+<div class="back" onclick="openOption('appdata/menudata/genelMatematik.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+   <h2 style="text-align:center;">Mod Hesaplama</h2><br>
+    <p>x mod y = r</p><br>
+    <form action="">
+        <input type="text" id="modx" placeholder="Bölünen(x)" class="form__field"><br><br>
+        <input type="text" id="mody" placeholder="Bölen(y)" class="form__field"><br><br>
+        <button type="button" class="btn btn-dark" onclick="moduloCal()">Hesapla</button>
+        <button type="button" class="btn btn-dark" onclick="this.form.reset();">Reset</button>
+    </form>
+    <br><br>
+    <p id="moduloans" style="font-family:mathfont"></p><br>

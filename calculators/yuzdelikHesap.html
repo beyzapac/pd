@@ -1,0 +1,100 @@
+
+<div id="percal">
+    <div class="back" onclick="openOption('appdata/menudata/basitDonusturuculer.html','Genel Matematik')">
+        <img
+            style="       
+                background-color: whitesmoke;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+                display: block !important;
+                height: 30px;
+                box-shadow: 0 0 10px white;
+                border-radius: 50%;
+                padding:5px;
+            " src="./icons/back.png" alt=""></div>
+    <div class="text-center">
+        <h2>Yüzdelik Hesaplama</h2><br>
+    </div>
+    <form action="">
+        <div class="coll">
+            <p>
+                1)
+                <input type="text" id="x" size=3 value='' placeholder="X"> sayısının
+                <input type="text" id="y" size=3 value='' placeholder="Y"> % si?
+                <br><br>
+
+                <button type="button" class="btn btn-light" onclick=solveper()>
+                    Hesapla
+                </button>
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button><br>
+            </p>
+        </div>
+    </form>
+    <br>
+    <p id="op" style="font-family:mathfont"></p><br>
+    <p id="op1" style="font-family:mathfont"></p><br>
+    <form action="">
+        <div class="coll">
+            <p>
+                2) <input type="text" id="perX1" size=3 value='' placeholder="X"> % si
+                <input type="text" id="perY1" size=3 value='' placeholder="Y"> olan sayının tamamı ?
+                <br><br>
+
+                <button type="button" class="btn btn-light" onclick=solvepera()>
+                    Hesapla
+                </button>
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button><br>
+            </p>
+        </div>
+    </form>
+    <br>
+    <p id="perAns1" style="font-family:mathfont"></p><br>
+    <p id="perAns2" style="font-family:mathfont"></p><br>
+
+    <br>
+    <p id="s" style="font-family:mathfont"></p><br>
+    <p id="s1" style="font-family:mathfont"></p><br>
+    <form action="">
+        <div class="coll">
+            <p>
+                3) <input type="text" id="x3" size=3 value='' placeholder="X"> + aynı sayının
+                <input type="text" id="y3" size=3 value='' placeholder="Y"> % si? <br><br>
+                <button type="button" class="btn btn-light" onclick=solvepercent()>Hesapla </button>
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button><br>
+            </p>
+        </div>
+    </form>
+    <br>
+    <p id="r" style="font-family:mathfont"></p><br>
+    <p id="r1" style="font-family:mathfont"></p><br>
+
+    <form action="">
+        <div class="coll">
+            <p>
+                4)<input type="text" id="x5" size=3 value='' placeholder="X">% nin
+                <input type="text" id="y5" size=3 value='' placeholder="Y">% si ?
+                <br><br>
+
+                <button type="button" class="btn btn-light" onclick=solveperper()>
+                    Hesapla
+                </button>
+                <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                    Reset
+                </button>
+            </p>
+        </div>
+    </form>
+    <br>
+    <p id="perans1" style="font-family:mathfont"></p><br>
+    <p id="perans2" style="font-family:mathfont"></p><br>
+    </p>
+    <br>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="back" onclick="openOption('appdata/menudata/istatistik.html','Statistics')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="zscores">
+
+    <h1 style="font-family:mathfont; text-align:center;">Z SCORE Hesaplama </h1>
+    <form>
+        <input type="number" name="rawscore" class="form__field" id="rawscore" width="5em"
+            placeholder="Ham Puanı Girin (x)">
+        <p>&nbsp;</p>
+        <input type="number" name="ppmean" class="form__field" id="ppmean" placeholder="Popülasyon Ortalamasını Girin (μ)">
+        <p>&nbsp;</p>
+        <input type="number" name="stdtn" class="form__field" id="stdtn"
+            placeholder="Standart Sapmayı Girin (σ) ">
+        <p>&nbsp;</p>
+        <button type="button" class="btn btn-outline-light" onclick="zscorecal()">Hesapla</button>
+        <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button>
+        <p id="zscoreans" style="color: white; text-align: center; font-size: 1.5em; font-family:mathfont"></p>
+        <p>&nbsp;</p>
+    </form>
+    <p style="color: white; text-align: center; font-family:mathfont">Standart olarak da adlandırılan z puanı
+        puan, z değeri ve normal puan, diğer şeylerin yanı sıra, belirtmek için kullanılan boyutsuz bir niceliktir.
+        bir olayın ortalama değerin üzerinde olduğu işaretli, kesirli, standart sapma sayısı
+        ölçüldü.<br>
+        Ortalamanın üzerindeki değerler pozitif z puanlarına sahipken, ortalamanın altındaki değerler negatif z puanlarına sahiptir. <br>Z-puanı, ham puandan veya söz konusu veri noktasından popülasyon ortalaması çıkarılarak hesaplanabilir.
+        (bir test puanı, boy, yaş, vb.), ardından farkı popülasyon standart sapmasına bölmek</p>
+</div>

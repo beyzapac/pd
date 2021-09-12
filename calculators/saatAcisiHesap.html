@@ -1,0 +1,29 @@
+<div class="back" onclick="openOption('appdata/menudata/genelMatematik.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="clocks">
+    <h1 style="font-family:mathfont; text-align:center;">Saat Açısı Hesaplama </h1>
+    <p>&nbsp;</p>
+    <form>
+        <input type="number" name="hclock" class="form__field" id="hclock" width="5em"
+            placeholder="Saati girin">
+        <p>&nbsp;</p>
+        <input type="number" name="mclock" class="form__field" id="mclock" placeholder="Dakikayı Girin">
+        <p>&nbsp;</p>
+        <button type="button" class="btn btn-outline-light" onclick="clockcal()">Hesapla</button>
+        <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button>
+        <p id="clockans" style="color: white; text-align: center; font-size: 1.3em; font-family:mathfont"></p>
+    </form>
+
+
+</div>

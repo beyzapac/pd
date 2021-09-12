@@ -1,0 +1,37 @@
+<div class="back" onclick="openOption('appdata/menudata/grafik-sekil.html','Graph and Spaces')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="manhats">
+    <h1 style=" text-align: center; font-family:mathfont">Manhattan Uzaklık Hesaplama </h1>
+    <p>&nbsp;</p>
+    <form action="">
+        <p style="color: white; text-align: center; font-size: 1em; font-family:mathfont">İlk nokta: <input
+                type="number" name="mdx1" id="mdx1" width="5em" placeholder="X1 Değeri">
+            <input type="number" name="mdx2" id="mdx2" width="5em" placeholder=" Y1 Değeri">
+        <p>&nbsp;</p>
+        </p>
+        <p style="color: white; text-align: center; font-size: 1em; font-family:mathfont">ikinci nokta <input
+                type="number" name="mdx3" id="mdx3" width="5em" placeholder="X2 Değeri">
+            <input type="number" name="mdx4" id="mdx4" width="5em" placeholder="Y2 Değeri">
+        <p>&nbsp;</p>
+        </p>
+        <button type="button" class="btn btn-outline-light" style="margin-left:550px;"
+            onclick="manhatcal()">Hesapla</button>
+        <button type="button" class="btn btn-outline-light" style="margin-left:550px;"
+            onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <p>&nbsp;</p>
+    <p id="manhatans" style="color: white; text-align: center; font-size: 1.7em; font-family:mathfont">
+    <p>&nbsp;</p>
+</div>
