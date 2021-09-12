@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Matematiği Kolaylaştıralım</title>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS5SX1CWFK"></script>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link href="katex/katex.min.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="nerdamer/nerdamer.core.js"></script>
+    <script src="nerdamer/Algebra.js"></script>
+    <script src="nerdamer/Calculus.js"></script>
+    <script src="nerdamer/Solve.js"></script>
+    <script src="nerdamer/Extra.js"></script>
+    <script src="library/matrixlogic.js"></script>
+
+    <script src="appjs/working.js"></script>
+    <script src="library/logicjavascript.js"></script>
+
+    <script src="appjs/simplecallogic.js"></script>
+    <script src="appjs/speechrecoforall.js"></script>
+    <script src="library/complexlogic.js"></script>
+    <script src="js/math.min.js"></script>
+    <script src="js/plotly-1.35.2.min.js"></script>
+    <script src="library/logValue.js"></script>
+    <script src="library/operations_on_fraction.js"></script>
+    <script src="library/conicSolve.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/mainnav.css">
+
+    <style>
+        :root {
+            --appblack: #25282B;
+            --appwhite: #dddddd;
+        }
+
+        @font-face {
+            font-family: mainfont;
+            src: url(../fonts/Product_Sans_Regular.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: mainfontbold;
+            src: url(../fonts/Product_Sans_Bold.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: mathfont;
+            src: url(../fonts/BalsamiqSans-Regular.ttf) format('truetype');
+        }
+
+        body {
+            font-family: mainfont;
+            background-color: var(--appblack);
+            color: var(--appwhite);
+            overflow-x: hidden;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="css/uppernav.css">
+    <script src="appjs/index.js"></script>
+
+</head>
+
+<body>
+        <div class="col-12" >
+            <div class="container">
+                <div id="mainsection" style="overflow: auto;">
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <script>
+
+
+        function loadcalculator(filename, displayname) {
+            $("#mainsection").hide().load(filename, function (response, status, xhttp) {
+                if (xhttp.status == 200) {
+                    renderMathInElement(document.getElementById('mainsection'));
+                }
+            }).fadeIn('1000');
+            document.getElementById('maintext').innerHTML = displayname;
+
+            recentlyUsed(filename, displayname);
+        }
+
+        function openOption(path, displayname) {
+            $("#mainsection").hide().load(path, function (response, status, xhttp) {
+                if (xhttp.status == 200) {
+
+                }
+            }).fadeIn('1000');
+        }
+        openOption('appdata/home.html', 'Matematiği Kolaylaştıralım')
+    </script>
+</body>
+
+</html>
